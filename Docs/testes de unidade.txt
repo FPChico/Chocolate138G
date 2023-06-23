@@ -1,0 +1,43 @@
+TESTES DE UNIDADE
+
+Crie scripts que testem métodos e funções
+"Código que testa código"
+
+Muitas pessoas sabem apenas fazer testículos individuais
+
+Existe uma forma melhor de executar múltiplos testes variando seus valores
+É chamado de DDT - Data Driven Testing = Test Direcionado por Dados
+
+Normalmente, os testes de unidade são criados após a programação
+
+Existe uma forma de organização do trabalho que inverte isso. primeiro se
+completam os testes e depois a programação
+
+Em uma Sprint, na manhã da 1ª segunda-feira, nós conversamos sobre o que será construído.
+De tarde, o PO e o QA se reunem para definir os critérios de aceitação (Dado-Quando-Então)
+Enquanto isso, os devs montam o esqueleto do código, retornando um resultado fixo
+
+Exemplo:
+Na reunião, ficou definido que nesta sprint nos construímos 4 funções de cálculos
+de áreas:
+public double calcularQuadrado(double lado){ return 0; }
+public double calcularRetangulo(dupla largura, double comprimento){ return 0; }
+public double calcularTriangulo(dupla largura, double comprimento){ return 0; }
+public double calcularCirculo(double raio){ return 0; }
+
+Nos dias seguintes, conforme os devs completem o código,
+os testículos vão começar a passar
+
+Teste funcionando é uma medida do progresso do software
+
+No TDD, quando executamos a bateria de testes?
+-R: Uma vez por dia ou quando há um novo build
+
+Esse processo pode evoluir para um processo de Integração Contínua (CI)
+
+Devs Passou Passou
+Ambiente -----> Lançamento ------> Ambiente ------> Ambiente
+Desenvolvimento de Teste de Produção
+
+              Integração Contínua
+                         Entrega Contínua (CD) --> Esteira / Pipeline
