@@ -1,9 +1,6 @@
 package pages;
 
 public class HomePage extends BasePage{
-
-
-
     // Construtor / Construtor
 
     @FindBy(id = "user-name")

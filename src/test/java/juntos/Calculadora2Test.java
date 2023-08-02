@@ -1,9 +1,31 @@
-pacote  juntos ;
+// 1 - Pacote
+package juntos;
+// 2 - Bibliotecas
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
-        importar  org . testng . Afirmar ;
-        importar  org . testng . anotações . Teste ;
+import java.util.ArrayList;
 
-public  class  Calculadora2Test {
+// 3 - Classe
+public class Calculadora2Test {
+    // 3.1 - Atributos
+    // Por enquanto sem atributos
+
+    // 3.2 Métodos e Funções
+    // 3.2.1 Uso Compartilhado
+    @DataProvider(name = "MassaMultiplicar")
+    public Object[][] massaMultiplicar() {
+        return new Object[][]{
+                {5, 7, 35},
+                {2, 10, 20},
+                {20, 0, 0},
+                {-5, 12, -60},
+                {-5, -6, 30}
+        }; // fecha o return
+    }
+
+    // 3.2.2 Testes em si
 
     @ Teste
     public  void  testeSomar () {
@@ -74,4 +96,5 @@ public  class  Calculadora2Test {
         // Afirmar
         Afirmar . assertEquals ( resultadoAtual , resultadoEsperado );
     }
+
 }
